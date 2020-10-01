@@ -1,5 +1,5 @@
 language: java
 script:
-- cd DemoTravis
+- cd Grupo2Tarea
 - mvn clean install
 - mvn test
