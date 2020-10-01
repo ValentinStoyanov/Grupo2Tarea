@@ -11,9 +11,6 @@ public class Grupo2TareaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(Grupo2TareaApplication.class, args);
 		
-		AgentDB a = new AgentDB();
-		
-		a.connect();
 		
 	}
 
