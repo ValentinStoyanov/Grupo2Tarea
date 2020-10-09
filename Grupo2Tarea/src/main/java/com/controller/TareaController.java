@@ -22,11 +22,10 @@ import com.persistence.TareaRepository;
 public class TareaController {
 	@Autowired
 	private TareaRepository tareaRepository;
-	
+
 	@GetMapping("getAll")
     public List<Tarea> getAll(){
         List<Tarea> tareas = this.tareaRepository.findAll();
-
         return tareas;
     }
 	
