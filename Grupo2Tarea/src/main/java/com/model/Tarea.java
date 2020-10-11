@@ -1,26 +1,28 @@
 package com.model;
 
+import java.io.Serializable;
+
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "Tarea")
-public class Tarea {
-	private String idTarea;
+public class Tarea implements Serializable{
+	private String _id;
 	private String contenido;
 	private boolean completada;
 	
-	public Tarea(String idTarea, String contenido, boolean completada) {
+	public Tarea(String _id, String contenido, boolean completada) {
 		super();
-		this.idTarea = idTarea;
+		this._id = _id;
 		this.contenido = contenido;
 		this.completada = completada;
 	}
 
-	public String getIdTarea() {
-		return idTarea;
+	public String get_id() {
+		return _id;
 	}
 
-	public void setIdTarea(String idTarea) {
-		this.idTarea = idTarea;
+	public void set_id(String _id) {
+		this._id = _id;
 	}
 
 	public String getContenido() {
