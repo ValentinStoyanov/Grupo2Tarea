@@ -1,9 +1,11 @@
 package com.model;
 
+import java.io.Serializable;
+
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "Tarea")
-public class Tarea {
+public class Tarea implements Serializable{
 	private String _id;
 	private String contenido;
 	private boolean completada;
